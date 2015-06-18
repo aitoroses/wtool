@@ -20,7 +20,7 @@ if (process.env.COMPRESS) {
 module.exports = {
 
   output: {
-    library: '{{name}}',
+    library: 'hello',
     libraryTarget: 'umd'
   },
 
