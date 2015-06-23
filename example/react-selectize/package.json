@@ -1,0 +1,39 @@
+{
+  "name": "react-selectize",
+  "version": "0.0.5",
+  "description": "A wrapper around Selectize.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "./build/global/react-selectize.js",
+  "scripts": {
+    "build-global": "rm -rf build/global && NODE_ENV=production webpack src/index.js build/global/react-selectize.js && NODE_ENV=production COMPRESS=1 webpack src/index.js build/global/react-selectize.min.js && echo \"gzipped, the global build is `gzip -c build/global/react-selectize.min.js | wc -c` bytes\"",
+    "test": "./node_modules/.bin/karma start"
+  },
+  "author": "Aitor Osés",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^5.5.8",
+    "babel-loader": "^5.1.4",
+    "css-loader": "^0.15.1",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-cli": "0.0.4",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-mocha": "^0.1.10",
+    "karma-sourcemap-loader": "^0.3.4",
+    "karma-webpack": "^1.5.0",
+    "mocha": "^2.2.4",
+    "node-libs-browser": "^0.5.2",
+    "react": "^0.13.2",
+    "react-mixin": "^1.2.2",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.8.0"
+  },
+  "dependencies": {},
+  "peerDepedencies": {
+    "react": "^0.13.2"
+  }
+}
